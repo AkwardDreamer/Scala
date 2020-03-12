@@ -1,7 +1,4 @@
 package com.gufang.collection
-
-import sun.security.ec.point.ProjectivePoint.Mutable
-
 import scala.collection.mutable
 import scala.collection.mutable.ArrayBuffer
 
