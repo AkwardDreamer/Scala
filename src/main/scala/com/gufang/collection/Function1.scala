@@ -20,6 +20,7 @@ object Function1 {
     println(str.foldLeft(mutable.Map[Char,Int]())(charCount2))
 
     var lines = List("you have to go home","and you have to find a job again or study hard","so don't care about others which don't care about you")
+    println(lines.flatMap(_.split(" ")).map((_,1)))
     println(lines.foldLeft("")(words).split(" ").foldLeft(Map[String,Int]())(wordCount))
   }
   def words(words:String,lines:String): String ={

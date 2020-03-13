@@ -27,6 +27,10 @@ object Collection5 {
     var list2 = List("tim","you")
     println(list2.flatMap(upper))
 
+    var list3 = List("hello world","hello scala")
+    println(list3.flatMap((x:String)=>x.split(" ")))
+    println(list3.flatMap(_.split(" ")))
+
   }
   def deal(list:ListBuffer[Int]): ListBuffer[Int] ={
     var newList = new ListBuffer[Int]
